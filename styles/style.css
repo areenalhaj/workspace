@@ -39,6 +39,7 @@ a:hover {
   margin-inline: auto;
   align-items: center;
   margin-top: 2rem;
+  /* flex-wrap: wrap; */
 }
 .content {
   display: flex;
@@ -49,6 +50,46 @@ a:hover {
 .image-section img {
   border-radius: 2rem;
   max-width: 490px;
+}
+
+@media screen and (max-width: 980px) {
+  .image-section {
+    margin-block: 5rem;
+    /* width: min-content; */
+    margin-inline: auto;
+  }
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    width: 100%;
+  }
+  form,
+  .form-group {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .image-section {
+    /* display: none; */
+  }
+  .image-section img {
+    width: 80%;
+    margin-left: 3rem;
+  }
+  .content {
+    width: 80%;
+  }
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    width: 100%;
+  }
+  form,
+  .form-group {
+    width: 60%;
+  }
 }
 .btn {
   padding: 10px 20px;
@@ -65,7 +106,7 @@ a:hover {
 
 /* End hero section */
 /* Start Form */
-form {
+.form {
   width: 490px;
   margin-inline: auto;
   margin-top: 5rem;
@@ -96,7 +137,7 @@ input[type="name"]:focus {
 /* End Form */
 /* ******  footer  ********* */
 .footer {
-  width: 100%;
+  min-width: 100%;
   height: 16rem;
   align-items: center;
   margin-inline: auto;
