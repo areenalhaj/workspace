@@ -69,7 +69,7 @@ a:hover {
   }
   form,
   .form-group {
-    width: 100%;
+    /* width: 80%; */
     margin-left: 5rem;
   }
   form,
@@ -82,8 +82,8 @@ a:hover {
     align-content: center;
   }
   .form-group label {
-    align-items: start;
-    z-index: 50;
+    text-align: left;
+    width: inherit;
   }
 }
 
@@ -130,10 +130,10 @@ a:hover {
     margin-inline: auto;
     align-content: center;
   }
-  .form-group label {
-    align-items: start;
-    z-index: 50;
-  }
+  /* .form-group label {
+    text-align: left;
+    width: inherit;
+  } */
   .nav2 {
     flex-direction: column;
     padding: 0;
