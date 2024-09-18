@@ -207,12 +207,15 @@ input[type="name"]:focus {
 .contact,
 .nav2 {
   align-items: center;
-  padding: 30px 50px;
   justify-content: center;
   display: flex;
   /* flex-wrap: wrap; */
 }
+.nav2 a {
+  padding-inline: 0.5rem;
+}
 .contact {
   padding-top: 80px;
+  padding-bottom: 40px;
 }
 /* RESPONSIVE */
