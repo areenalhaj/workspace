@@ -67,6 +67,11 @@ a:hover {
     margin-inline: auto;
     width: 100%;
   }
+  .form {
+    padding-bottom: 3rem;
+    padding-top: 0rem;
+    margin-top: 0;
+  }
   form,
   .form-group {
     /* width: 80%; */
