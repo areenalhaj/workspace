@@ -28,6 +28,10 @@ a:hover {
   background-color: #bac0f5;
   border-bottom: #b0a8a8 solid 5px;
 }
+.other-nav-bar {
+  display: none;
+}
+
 .nav-bar a {
   margin-left: 20px;
 }
@@ -65,15 +69,37 @@ a:hover {
   }
   form,
   .form-group {
-    width: 80%;
+    width: 100%;
     margin-left: 5rem;
   }
+  form,
+  .form-group,
+  .checkbox-label,
+  .register-btn {
+    width: inherit;
+    align-items: center;
+    margin-inline: auto;
+    align-content: center;
+  }
+  .form-group label {
+    align-items: start;
+    z-index: 50;
+  }
 }
-@media screen and (max-width: 500px) {
+
+.menu {
+  display: none;
+}
+@media screen and (max-width: 520px) {
+  .nav-bar {
+    display: none;
+  }
+  .menu {
+    display: inline;
+  }
   .image-section {
     align-items: center;
-
-    /* display: none; */
+    display: none;
   }
   .image-section img {
     width: 80%;
@@ -88,21 +114,32 @@ a:hover {
     margin-inline: auto;
     width: 100%;
   }
-  form,
-  .form-group {
-    width: 60%;
-    /* margin-left: 3rem; */
-    align-items: center;
+  form.form {
+    width: 80%;
+    padding-bottom: 3rem;
   }
-}
-@media screen and (max-width: 450px) {
+  .label-check {
+    width: inherit;
+    font-size: smaller;
+  }
+  .form-group,
+  .checkbox-label,
+  .register-btn {
+    width: inherit;
+    align-items: center;
+    margin-inline: auto;
+    align-content: center;
+  }
+  .form-group label {
+    align-items: start;
+    z-index: 50;
+  }
   .nav2 {
     flex-direction: column;
-  }
-  .nav2 a {
-    padding-top: 0.5rem;
+    padding: 0;
   }
 }
+
 .btn {
   padding: 10px 20px;
   width: fit-content;
@@ -111,6 +148,8 @@ a:hover {
   color: white;
   border: none;
   cursor: pointer;
+  /* ******** */
+  display: inline;
 }
 .btn:hover {
   background-color: #3d3f52;
@@ -121,7 +160,7 @@ a:hover {
 .form {
   width: 490px;
   margin-inline: auto;
-  margin-top: 5rem;
+  margin-top: 3rem;
   align-items: center;
 }
 .form-group {
