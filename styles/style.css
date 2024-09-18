@@ -205,14 +205,21 @@ input[type="name"]:focus {
   border-bottom: #b0a8a8 solid 5px;
 }
 .contact,
-.nav2 {
+.nav2,
+.go-top {
   align-items: center;
   justify-content: center;
   display: flex;
   /* flex-wrap: wrap; */
 }
-.nav2 a {
+.nav2 a,
+.go-top {
   padding-inline: 0.5rem;
+}
+.go-top {
+  padding-block: 1rem;
+  font-size: larger;
+  font-weight: bolder;
 }
 .contact {
   padding-top: 80px;
