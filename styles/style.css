@@ -55,7 +55,10 @@ a:hover {
   border-radius: 2rem;
   max-width: 490px;
 }
-
+.form {
+  padding-bottom: 3rem;
+  padding-top: 1rem;
+}
 @media screen and (max-width: 980px) {
   .image-section {
     margin-block: 5rem;
