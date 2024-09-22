@@ -98,7 +98,7 @@ a:hover {
 .menu {
   display: none;
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 550px) {
   .nav-bar {
     display: none;
   }
